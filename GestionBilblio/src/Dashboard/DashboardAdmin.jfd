@@ -1,0 +1,72 @@
+JFDML JFormDesigner: "8.0.3.0.246" Java: "17.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormComponent( "javax.swing.JButton" ) {
+			name: "button1"
+			"text": "Livres"
+			"background": new java.awt.Color( 204, 204, 0, 255 )
+			"foreground": new java.awt.Color( 0, 0, 0, 255 )
+			addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1", true ) )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 30, 140 )
+			"size": new java.awt.Dimension( 100, 40 )
+		} )
+		add( new FormComponent( "javax.swing.JButton" ) {
+			name: "button2"
+			"text": "Exemplaires"
+			"foreground": new java.awt.Color( 0, 0, 0, 255 )
+			"background": new java.awt.Color( 204, 204, 0, 255 )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 30, 210 )
+			"size": new java.awt.Dimension( 100, 40 )
+		} )
+		add( new FormComponent( "javax.swing.JButton" ) {
+			name: "button3"
+			"text": "Emprunteurs"
+			"foreground": new java.awt.Color( 0, 0, 0, 255 )
+			"background": new java.awt.Color( 204, 204, 0, 255 )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 30, 270 )
+			"size": new java.awt.Dimension( 100, 40 )
+		} )
+		add( new FormComponent( "javax.swing.JButton" ) {
+			name: "button4"
+			"text": "Emprunts"
+			"foreground": new java.awt.Color( 0, 0, 0, 255 )
+			"background": new java.awt.Color( 204, 204, 0, 255 )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 30, 325 )
+			"size": new java.awt.Dimension( 100, 40 )
+		} )
+		add( new FormComponent( "javax.swing.JButton" ) {
+			name: "button5"
+			"text": "Utilisateurs"
+			"foreground": new java.awt.Color( 0, 0, 0, 255 )
+			"background": new java.awt.Color( 153, 153, 0, 255 )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 30, 385 )
+			"size": new java.awt.Dimension( 102, 40 )
+		} )
+		add( new FormComponent( "javax.swing.JButton" ) {
+			name: "button6"
+			"text": "Deconnexion"
+			"foreground": new java.awt.Color( 0, 0, 0, 255 )
+			"background": new java.awt.Color( 153, 153, 0, 255 )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 750, 30 )
+			"size": new java.awt.Dimension( 104, 40 )
+		} )
+		add( new FormComponent( "javax.swing.JLabel" ) {
+			name: "label1"
+			"text": "                                                    Tableau de bord"
+			"maximumSize": new java.awt.Dimension( 95, 19 )
+			"foreground": new java.awt.Color( 51, 204, 255, 255 )
+			"border": new com.jformdesigner.model.SwingBorder( "InternalFrame.border" )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 240, 35 )
+			"size": new java.awt.Dimension( 465, 35 )
+		} )
+	}
+}

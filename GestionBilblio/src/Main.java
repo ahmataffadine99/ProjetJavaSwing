@@ -3,6 +3,9 @@ import ComposantsInterfaces.Button;
 import ComposantsInterfaces.Menu;
 import ComposantsInterfaces.MenuBar;
 import ComposantsInterfaces.MenuItem;
+import Dashboard.AdministrationFrame;
+import Dashboard.DashboardAdmin;
+import Dashboard.UserFrame;
 import Gmail.GmailSender;
 import Interfaces.Frame;
 
@@ -12,7 +15,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.math.BigInteger;
-import java.net.InetSocketAddress;
 import java.nio.charset.StandardCharsets;
 import java.security.NoSuchAlgorithmException;
 import java.sql.*;
@@ -21,6 +23,8 @@ import db.DatabaseConnexion;
 
 
 import java.security.MessageDigest;
+
+
 public class Main {
     public static void main(String[] args) throws IOException, SQLException {
         System.out.println("Hello world!");
@@ -168,6 +172,11 @@ public class Main {
                             // L'utilisateur est authentifié
                             // Traitement de la connexion
                             JOptionPane.showMessageDialog(null, "Connexion réussie !");
+                            // Créer une instance de la classe Dashboard-Administrateur
+                             AdministrationFrame administrationFrame= new AdministrationFrame();
+
+                            administrationFrame.setVisible(true);
+
                         } else {
                             // L'utilisateur n'est pas authentifié
                             JOptionPane.showMessageDialog(null, "Nom d'utilisateur ou mot de passe incorrect.");
